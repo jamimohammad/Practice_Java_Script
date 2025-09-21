@@ -1,0 +1,7 @@
+var take = Number(prompt('enter a number'))
+
+var tavan = take ** 2
+var jazr = (2.598 / 2) * tavan
+
+
+alert(jazr)
