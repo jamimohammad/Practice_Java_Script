@@ -1,3 +1,6 @@
+//2.13 (کاربرد مالی: ارزش مرکب پس‌انداز)
+// یک برنامه JavaScript بنویسید که از کاربر مبلغ پس‌انداز ماهیانه را بگیرد، سپس ارزش حساب پس از شش ماه را محاسبه و نمایش دهد.
+
 var take = Number(prompt('enter a number'))
 var five = 5 / take
 var division = five / 12

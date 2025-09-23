@@ -1,3 +1,6 @@
+//2.15 (محاسبه فاصله بین دو نقطه)
+// یک برنامه‌ی جاوااسکریپت بنویسید که مختصات دو نقطه (x1, y1) و (x2, y2) را بگیرد و فاصله بین آن‌ها را نمایش دهد.
+
 var x1 = Number(prompt('enter a number'))
 var y1 = Number(prompt('enter a number'))
 var x2 = Number(prompt('enter a number'))
