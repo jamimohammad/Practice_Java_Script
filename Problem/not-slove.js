@@ -10,18 +10,6 @@
 // 2.1x + 0.55y = 5.9
 
 
-Date.now()
-
-// 2.8 (زمان فعلی با اختلاف زمانی)
-// یک برنامه JavaScript بنویسید که از کاربر اختلاف زمانی نسبت به GMT را بگیرد و زمان فعلی در آن منطقه را نمایش دهد.
-
-
-
-
-//2.17 (Science: wind-chill temperature)
-// Write a JavaScript program that prompts the user to enter the temperature in Fahrenheit (between -58°F and 41°F) and the wind speed (>= 2), then computes the wind-chill index using:
-
-// twc = 35.74 + 0.6215*ta - 35.75*v^0.16 + 0.4275*ta*v^0.16
 
 
 
