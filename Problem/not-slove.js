@@ -11,18 +11,6 @@
 
 
 
-
-
-
-//2.18 (Print a table) Write a JavaScript program that displays the following table (cast floating numbers to integers): a b pow(a, b) 1 2 1 2 3 8 3 4 81 4 5 1024 5 6 15625
-
-
-// 2.19 (محاسبه مساحت مثلث با مختصات)
-// یک برنامه‌ی جاوااسکریپت بنویسید که مختصات سه نقطه از مثلث را از کاربر بگیرد و مساحت آن را محاسبه کند.
-
-
-
-
 // 2.22 (Financial application: monetary units)
 // Rewrite the “compute change” program in JavaScript to avoid accuracy loss when converting floating-point numbers to integers.
 
