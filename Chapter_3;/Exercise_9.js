@@ -1,7 +1,6 @@
 // 3.9 (بررسی ISBN-10)
 // برنامه‌ای در جاوااسکریپت بنویسید که 9 رقم اول یک شماره ISBN-10 را بگیرد و رقم دهم (Checksum) را محاسبه و شماره کامل را نمایش دهد.
-
-let user =Number(prompt("Enter the first 9 digits of an ISBN: ")); 
+let user = prompt("Enter the first 9 digits of an ISBN:");
 
 let d1 = Number(user.charAt(0));
 let d2 = Number(user.charAt(1));
