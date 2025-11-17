@@ -1,4 +1,8 @@
-function guess () {
+//4.10 (Guess birthday) Rewrite Listing 4.3, GuessBirthday.java, to prompt the user to 
+// enter the character Y for Yes and N for No rather than entering 1 for Yes and 0
+//  for No.
+
+function guess() {
     let day = 0;
 
     let set1 = "1 3 5 7\n9 11 13 15\n17 19 21 23\n25 27 29 31";
