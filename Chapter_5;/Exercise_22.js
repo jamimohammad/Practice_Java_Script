@@ -18,15 +18,20 @@ let total = mp * months
 console.log("monthly  " + mp)
 console.log("total : " + total)
 
-console.log("Payment | Interest | money | Balance")
+console.log("Payment        Interest       money      Balance")
 
 let balance = loan;
 
 for (let i = 1; i <= months; i++) {
     let interest = balance * mr
     let money = mp - interest  
-    balance = balance - money              
+    balance = balance - money  
+    
+    let i1 = interest.toFixed(2)
+        let m1 = money.toFixed(2)
+            let b1 = balance.toFixed(2)
+               
 
-   console.log(i + " | " + interest + " | " + money + " | " + balance)
+   console.log(i + "               " + i1 + "         " + m1 + "     " + b1)
 
 }
