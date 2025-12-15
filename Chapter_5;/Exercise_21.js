@@ -12,20 +12,21 @@
 //  7.875%           202.17             12129.97
 //  8.000%           202.76             12165.84
 
-let amount = Number(prompt("mount:"));
+let amount = Number(prompt("amount:"));
 let years = Number(prompt("number of Years"));
 
 console.log("Interest Rate    Monthly Payment    Total Payment");
 
 for (let rate = 5; rate <= 8; rate += 0.125) {
-    let r = rate / 1200;
-    let n = years * 12;
+    let r = rate / 1200;    
+    let n = years * 12;     
     let monthlyP = amount * r / (1 - Math.pow(1 + r, -n));
     let totalP = monthlyP * n;
 
-    let rate = rate.toFixed(3) + "%";
-    let month = monthlyP.toFixed(2);
-    let total = totalP.toFixed(2);
+    
+    let rateStr = rate.toFixed(3) + "%";
+    let monthStr = monthlyP.toFixed(2);
+    let totalStr = totalP.toFixed(2);
 
-    console.log(rate + "           " + month + "             " + total);
+    console.log(rateStr + "           " + monthStr + "             " + totalStr);
 }
