@@ -2,13 +2,13 @@
 // following formula (s is the length of a side):
 
 function all(n, s) {
-    var multipliction1 = n * s ** 2;
-    var math2 = Math.tan(Math.PI / n) * 4;
-    var area = multipliction1 / math2;
+    let multipliction1 = n * s ** 2;
+    let math2 = Math.tan(Math.PI / n) * 4;
+    let area = multipliction1 / math2;
     return area;
 }
 
-var n = Number(prompt('Enter number of sides'));
-var s = Number(prompt('Enter length '));
+let sides = Number(prompt('Enter number of sides'));
+let length1 = Number(prompt('Enter length '));
 
-console.log("Area: " + all(n, s));
+console.log("Area: " + all(sides, length1));
