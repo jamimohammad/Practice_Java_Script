@@ -4,7 +4,7 @@
 // angle a in radians between 0 and 2p, as shown in Figure 4.7b and the point deter
 // mined by this angle is (r*cos(a), r*sin(a)).)
 
-function one(r) {
+function randomTriangleSides (r) {
     var random_1 = Math.random() * 2 * Math.PI;
     var random_2 = Math.random() * 2 * Math.PI;
     var random_3 = Math.random() * 2 * Math.PI;
@@ -22,9 +22,8 @@ function one(r) {
     var b = Math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2);
     var c = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
 
-return a + ", " + b + ", " + c;
+console.log(a + ", " + b + ", " + c);
 
 }
 
-var result = one (40);
-console.log(result);
+
