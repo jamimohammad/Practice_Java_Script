@@ -7,42 +7,38 @@
 //  C: Computer Science
 //  I: Information Technology
 
-function number() {
-    var letter = prompt('Enter a Letter')
-    var number = Number(prompt('Enter a Number'))
+function getstudentinfo() {
+    let letter = prompt('Enter a letter').toUpperCase();
+    let number = Number(prompt('Enter a number'));
 
-    letter = letter.toUpperCase()
+    let major = '';
+    let status = '';
 
-    if (letter === 'M' && number === 1) {
-        return 'Mathematics Freshman'
-    } else if (letter === 'M' && number === 2) {
-        return 'Mathematics Sophomore'
-    } else if (letter === 'M' && number === 3) {
-        return 'Mathematics Junior'
-    } else if (letter === 'M' && number === 4) {
-        return 'Mathematics Senior'
-    }
-    else if (letter === 'C' && number === 1) {
-        return 'Computer Science Freshman'
-    } else if (letter === 'C' && number === 2) {
-        return 'Computer Science Sophomore'
-    } else if (letter === 'C' && number === 3) {
-        return 'Computer Science Junior'
-    } else if (letter === 'C' && number === 4) {
-        return 'Computer Science Senior'
-    }
-    else if (letter === 'I' && number === 1) {
-        return 'Information Technology Freshman'
-    } else if (letter === 'I' && number === 2) {
-        return 'Information Technology Sophomore'
-    } else if (letter === 'I' && number === 3) {
-        return 'Information Technology Junior'
-    } else if (letter === 'I' && number === 4) {
-        return 'Information Technology Senior'
+    if (letter === 'M') {
+        major = 'Mathematics';
+    } else if (letter === 'C') {
+        major = 'Computer Science';
+    } else if (letter === 'I') {
+        major = 'Information Technology';
     } else {
-        return 'bad'
+        return 'Invalid major';
     }
+
+    if (number === 1) {
+        status = 'Freshman';
+    } else if (number === 2) {
+        status = 'Sophomore';
+    } else if (number === 3) {
+        status = 'Junior';
+    } else if (number === 4) {
+        status = 'Senior';
+    } else {
+        return 'Invalid status';
+    }
+
+    return major + ' ' + status;
 }
 
-alert(number())
+alert(getstudentinfo());
+
 
