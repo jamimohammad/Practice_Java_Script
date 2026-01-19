@@ -9,7 +9,7 @@
 // are extracted. Write a test program that prompts the user to enter an integer and 
 // displays the sum of all its digits.
 
-function sumdigits(n) {
+function Sumthedigitsinaninteger(n) {
     let sum = 0;
     while (n > 0) {
         sum += n % 10;       
@@ -18,6 +18,6 @@ function sumdigits(n) {
     return sum;              
 }
 
-let take = Number(prompt('Enter a number'));
-console.log("Sum of digits is " + sumdigits(take));
+let sumdigits = Number(prompt('Enter a number'));
+console.log("Sum of digits is " + Sumthedigitsinaninteger(sumdigits));
 
