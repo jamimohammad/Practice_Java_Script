@@ -1,9 +1,10 @@
-// 6.12 (Display characters) Write a method that prints characters using the following 
-// header:
-// public static void printChars(char ch1, char ch2, int
-//  numberPerLine)
-// This method prints the characters between ch1 and ch2 with the specified num
-// bers per line. Write a test program that prints ten characters per line from 1 to Z.
+// // 6.12 (Display characters) Write a method that prints characters using the following 
+// // header:
+// // public static void printChars(char ch1, char ch2, int
+// //  numberPerLine)
+// // This method prints the characters between ch1 and ch2 with the specified num
+// // bers per line. Write a test program that prints ten characters per line from 1 to Z.
+
 
 function printChars(ch1, ch2, numberPerLine) {
     let start = ch1.charCodeAt(0);
@@ -15,14 +16,11 @@ function printChars(ch1, ch2, numberPerLine) {
         line += String.fromCharCode(i) + " ";
         count++;
 
-        if (count === numberPerLine) {
+        if (count === numberPerLine || i === end) {
             console.log(line);
             line = "";
             count = 0;
         }
-    }
-    if (line.length > 0) {
-        console.log(line);
     }
 }
 
