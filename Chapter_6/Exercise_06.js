@@ -7,11 +7,11 @@
 // // The method header is
 // // public static void displayPattern(int n)
 
-function displayPattern(n) {
-    for (let m = 1; m <= n; m++) {
+function displayPattern(num) {
+    for (let m = 1; m <= num; m++) {
         let line2 = "";
 
-        for (let s = 0; s < n - m; s++) {
+        for (let s = 0; s < num - m; s++) {
             line2 += "  "; 
         }
         for (let a = m; a >= 1; a--) {
@@ -20,6 +20,5 @@ function displayPattern(n) {
         console.log(line2); 
     }
 }
-
-var n = Number(prompt('Enter a number'));
-displayPattern(n); 
+var num = Number(prompt('Enter a number'));
+displayPattern(num); 
