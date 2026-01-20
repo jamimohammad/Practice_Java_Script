@@ -8,26 +8,29 @@
 // Password if the rules are followed or Invalid Password otherwise.
 
 let password = prompt('please enter your password');
+let isValid = true;
 
 if (password.length < 8) {
-  console.log("Invalid Password");
-} 
+  isValid = false;
+}
 
-else if (!/^[A-Za-z0-9]+$/.test(password)) {
-  console.log("Invalid Password");
-} 
+if (!/^[A-Za-z0-9]+$/.test(password)) {
+  isValid = false;
+}
 
-else {
-  let digitCount = 0;
-  for (let i = 0; i < password.length; i++) {
-    if (password[i] >= '0' && password[i] <= '9') {
-      digitCount++;
-    }
+let digitCount = 0;
+for (let i = 0; i < password.length; i++) {
+  if (password[i] >= '0' && password[i] <= '9') {
+    digitCount++;
   }
+}
 
-  if (digitCount >= 2) {
-    console.log("Valid Password");
-  } else {
-    console.log("Invalid Password");
-  }
+if (digitCount < 2) {
+  isValid = false;
+}
+
+if (isValid) {
+  console.log("Valid Password");
+} else {
+  console.log("Invalid Password");
 }
