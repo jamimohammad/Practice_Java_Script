@@ -4,7 +4,7 @@
 // the dollar amount before the decimal point and the cents after the decimal amount 
 // using the indexOf andsubstring methods.
 
-function all(){
+function computeChange(){
 
 let money = prompt("Enter an amount");
 
@@ -32,4 +32,4 @@ let p = left;
 
 alert(money+ ' \n' + dollar + " dollars\n" +q + " quarters\n" +d + " dimes\n" +n + " nickels\n" +p + " pennies");
 }
-all()
+computeChange()

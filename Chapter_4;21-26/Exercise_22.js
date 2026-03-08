@@ -6,7 +6,7 @@
 //  Federal tax withholding rate (e.g., 20%)
 //  State tax withholding rate (e.g., 9%)
 
-function test() {
+function payrollCalculator() {
 
     var name1 = prompt('Enter your name:');
     var hours = Number(prompt('Enter hours worked in a week:'));
@@ -27,4 +27,4 @@ var all = " Name: " + name1 + "\n" +"Hours: " + hours + "\n" +"Pay : " + rate + 
     alert(all);
 }
 
-test();
+payrollCalculator();

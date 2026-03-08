@@ -1,7 +1,7 @@
 //(Order three cities) Write a program that prompts the user to enter three cities and 
 // displays them in ascending order. Here is a sample run:
 
-function all() {
+function orderCities() {
     var city = prompt('Enter the first city:');
     var city1 = prompt('Enter the second city:');
     var city2 = prompt('Enter the third city:');
@@ -17,4 +17,4 @@ function all() {
     alert(allCities);
 }
 
-all();
+orderCities();
