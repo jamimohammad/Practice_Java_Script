@@ -2,18 +2,18 @@
 // integer and displays its corresponding binary value. Don’t use Java’s Integer
 // .toBinaryString(int) in this program.
 
-let number = Number(prompt("Enter a decimal number"))
+let number = Number(prompt("Enter a decimal number"));
 
 let binary = "";
 
-for (;;) {
-    let remainder = number % 2;
-    binary = remainder + binary; 
-    number = Math.floor(number / 2)  
-
-    if (number === 0) {                 
-        break;
+if (number === 0) {
+    binary = "0";
+} else {
+    while (number > 0) {
+        let remainder = number % 2;
+        binary = remainder + binary;
+        number = Math.floor(number / 2);
     }
 }
 
-console.log("Binary: " + binary)
+console.log("Binary: " + binary);
