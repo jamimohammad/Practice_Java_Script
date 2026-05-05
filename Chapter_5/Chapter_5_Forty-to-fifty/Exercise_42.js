@@ -4,12 +4,13 @@
 //  ■ Let the user enter COMMISSION_SOUGHT instead of fixing it as a constant.
 
 let salafy = 5000;
-let commission1 = Number(prompt("Enter commission"));
+let commissionTarget = Number(prompt("Enter commission"));
 
-let sales = 0;
+let sales = 1;
 let commission = 0;
 
-for (sales = 1; ; sales++) {
+while (true) {
+
     if (sales <= 5000) {
         commission = sales * 0.08;
     } 
@@ -17,13 +18,15 @@ for (sales = 1; ; sales++) {
         commission = 5000 * 0.08 + (sales - 5000) * 0.10;
     } 
     else {
-        commission =5000 * 0.08 +  5000 * 0.10 +(sales - 10000) * 0.12;
+        commission = 5000 * 0.08 + 5000 * 0.10 + (sales - 10000) * 0.12;
     }
 
-    if (commission >= commission1) {
+    if (commission >= commissionTarget) {
         break;
     }
+
+    sales++;
 }
 
-console.log("Minimum" + sales);
-console.log("Commission" + commission.toFixed(2));
+console.log("Minimum sales: " + sales);
+console.log("Commission: " + commission.toFixed(2));

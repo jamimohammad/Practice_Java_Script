@@ -12,22 +12,20 @@
 // The largest number is 5
 // The occurrence count of the largest number is 4
 
-let number = Number(prompt("Enter a number"));
-
-let max = number;
+let max;
 let count = 0;
 
-while (number !== 0) {
+while (true) {
+    let number = Number(prompt("Enter a number (0 to stop)"));
 
-    if (number > max) {
+    if (number === 0) break;
+
+    if (max === undefined || number > max) {
         max = number;
         count = 1;
-    } 
-    else if (number === max) {
+    } else if (number === max) {
         count++;
     }
-
-    number = Number(prompt("Enter a number"));
 }
 
 console.log("The largest number is " + max);
