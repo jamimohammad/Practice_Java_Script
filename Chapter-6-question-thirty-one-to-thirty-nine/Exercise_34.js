@@ -10,17 +10,25 @@ function firstDayOfMonth(year, month) {
         year--;
     }
 
-    var k = year % 100;
-    var j = Math.floor(year / 100);
-    var h = (q + Math.floor((26 * (month + 1)) / 10) + k + Math.floor(k / 4) + Math.floor(j / 4) + 5 * j) % 7;
-
-    if (h === 0) return "Saturday";
-    if (h === 1) return "Sunday";
-    if (h === 2) return "Monday";
-    if (h === 3) return "Tuesday";
-    if (h === 4) return "Wednesday";
-    if (h === 5) return "Thursday";
-    if (h === 6) return "Friday";
+    var change1 = year % 100;
+    var change2 = Math.floor(year / 100);
+    var day = (q + Math.floor((26 * (month + 1)) / 10) + change1 + Math.floor(change1 / 4) + Math.floor(change2 / 4) + 5 * change2) % 7;
+switch (day) {
+    case 0:
+        return "Saturday";
+    case 1:
+        return "Sunday";
+    case 2:
+        return "Monday";
+    case 3:
+        return "Tuesday";
+    case 4:
+        return "Wednesday";
+    case 5:
+        return "Thursday";
+    case 6:
+        return "Friday";
+}
 }
 var year = Number(prompt('Enter year'));
 var month = Number(prompt('Enter month (1-12)'));

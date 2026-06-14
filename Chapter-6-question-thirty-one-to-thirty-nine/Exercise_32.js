@@ -14,7 +14,7 @@ function gameCraps() {
     } else {
         let point = sum;
 
-        for (; ;) {
+        while (true) {
             random1 = Math.floor(Math.random() * 6) + 1;
             random2 = Math.floor(Math.random() * 6) + 1;
             sum = random1 + random2;

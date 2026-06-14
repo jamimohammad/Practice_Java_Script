@@ -3,13 +3,13 @@
 // that displays the date and time. Here is a sample run:
 // Current date and time is May 16, 2012 10:34:23
 
-var now = new Date();
+let now = new Date();
 
-var year = now.getFullYear();
-var monthNumber = now.getMonth() + 1;
-var day = now.getDate();
+let year = now.getFullYear();
+let monthNumber = now.getMonth() + 1;
+let day = now.getDate();
 
-var month;
+let month;
 switch (monthNumber) {
   case 1: month = "January"; break;
   case 2: month = "February"; break;
@@ -25,9 +25,9 @@ switch (monthNumber) {
   case 12: month = "December"; break;
 }
 
-var hours = now.getHours();
-var minutes = now.getMinutes();
-var seconds = now.getSeconds();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let seconds = now.getSeconds();
 
 console.log(
   "Current date and time is " + month + " " + day + ", " + year + " " +
